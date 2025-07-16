@@ -6,6 +6,42 @@
     <title>Tutorial Day 2</title>
 </head>
 <body>
-    
+    <h1>Registration Form</h1>
+    <p>Fill the form with correct information.</p>
+    <form action="https://formspree.io/" method="post">
+        <fieldset>
+            <b>First Name:</b>
+            <input type="text" required>
+            <br><hr>
+            <b>Last Name:</b>
+            <input type="text" required>
+            <br><hr>
+            <b>Email Address:</b>
+            <input type="email" required>
+            <br><hr>
+            <b>Password:</b>
+            <input type="password" min="8" required>
+            <br><hr>
+            <b>Confirm Password:</b>
+            <input type="password" min="8" required>
+            <br><hr>
+            <b>Phone Number:</b>
+            <input type="tel" required>
+            <br><hr>
+            <b>Gender:</b>
+            <input type="radio" id="male" name="gender">Male
+            <input type="radio" id="female" name="gender">Female
+            <input type="radio" name="gender" id="other">Other
+            <br><hr>
+            <b>Date of Birth:</b>
+            <input type="date" min="15" required>
+            <br><hr>
+            <b>Profile Picture:</b>
+            <input type="file" required>
+            <br><hr>
+            <input type="submit" value="Submit">
+            
+        </fieldset>
+    </form>
 </body>
 </html>
