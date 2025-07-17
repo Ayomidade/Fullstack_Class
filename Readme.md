@@ -1,8 +1,9 @@
 # FULLSTACK CLASS
-- Fullstack Class with Paul & Mr Seun.
+- Fullstack Class with Michael.
 
    #### HTML CLASS
  - HTML ELEMENTS
+ - HTML Tags (Form, Input, Paragraph, Table)
  - We are  are going to be learning about the HTML
  - Today we are learning about listing Elements
  - Local image resources for img tag
