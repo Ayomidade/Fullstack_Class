@@ -1,0 +1,38 @@
+body{
+    background-image: url(./Doc/bg.jpg);
+    background-position: center;
+    background-repeat: none;
+    max-height: fit-content;
+    
+}
+
+/* .container {
+    width:fit-content;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 20px;
+} */
+
+h1{
+    text-align: center;
+    background: white;
+}
+
+table, th, td{
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: auto;
+}
+thead{
+    background-color: #464646;
+    
+}
+
+tbody{
+    background-image: url(./Doc/bg.jpg);
+    background-position: center;
+}
+
