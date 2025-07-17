@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 </head>
 <body>
-    <h1>Registration Form</h1>
-    <p>Fill the form with correct information.</p>
+    <div class="header">
+        <h1>Registration Form</h1>
+        <p>Fill the form with correct information.</p>
+    </div>
     <form action="https://httpbin.org/post" method="POST">
         <fieldset>
             <label for="first name">
@@ -42,9 +45,9 @@
             <br><hr>
             <label for="Gender">
             <b>Gender:</b>
-            <input type="radio" name="gender" id="male">Male
-            <input type="radio" name="gender" id="female">Female
-            <input type="radio" name="gender" id="other">Other
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
             </label>
             <br><hr>
             <label for="Date of Birth">
