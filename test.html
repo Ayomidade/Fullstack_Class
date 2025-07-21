@@ -8,15 +8,48 @@
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+        <h1>Student Portal</h1>
+        <a href="#">Submit Profile</a>
+        <a href="#">View Student</a>
     </nav>
 
-    <div class="container">
-        <h1>Welcome to Our Website</h1>
-        <p>This is a sample paragraph to demonstrate the layout.</p>
-        <p>Feel free to explore and learn more about us.</p>
+    <div class="grid-layout">
+
+        <section class="form-section">
+            <h2>Submit Your Profile</h2>
+            <form action="">
+                <label for="">Full Name
+                    <input type="text" name="fullname" placeholder="ENTER YOUR FULLNAME HERE" required>
+                </label>
+                <label for="">Upload Profile Picture
+                    <input type="file" name="" id="">
+                </label>
+                <label for="">Select Course
+                    <select name="course" id="">
+                        <option value="">Web Development</option>
+                        <option value="">Digital Marketing</option>
+                        <option value="">Graphic Design</option>
+                        <option value="">Data Science</option>
+                    </select>
+                </label>
+                <label for="">About You
+                    <textarea name="" id="" placeholder="Say something about yourself"></textarea>
+                </label>
+                <button>Submit</button>
+            </form>
+        </section>
+
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <p><b>Note:</b> Please follow the guidelines before submitting your profile.</p>
+            <ul>
+                <li>Use your real name</li>
+                <li>Picture should be less than 1MB</li>
+                <li>Choose the correct course</li>
+            </ul>
+        </section>
+
+
     </div>
 </body>
 </html>
