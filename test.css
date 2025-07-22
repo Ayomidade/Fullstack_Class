@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Navigation */
+
 nav{
     
     background-color: #111;
@@ -20,9 +22,50 @@ nav a{
     text-decoration: none;
 }
 
+/* Form Styling */
+
 form{
     border:1px solid #ddd;
     border-radius: 10px;
     padding: 16px;
     margin: 16px;
+    font-weight: bold;
+}
+
+form label{
+    display:block;
+    margin: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+button{
+    background-color: #00d1b2;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    color: whitesmoke;
+    width: 150px;
+}
+
+button:hover{
+    background-color: #06b99e;
+}
+
+.instructions{
+    padding: 10px 32px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 16px;
+    line-height: 1.5;
 }
