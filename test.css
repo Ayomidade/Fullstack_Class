@@ -129,6 +129,8 @@ footer p{
     margin: 0px;
 }
 
+/* Responsiveness */
+
  @media screen  and (max-width:650px){
   #table-section{
     width:auto;
