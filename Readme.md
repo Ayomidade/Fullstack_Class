@@ -23,3 +23,6 @@
 - box model (padding, margin, border)
 - display(inline, block, inline-block,grid,flex)
 - grid
+- FlexBox
+- Responsiveness(@mediascreen and(max-width:650px))
+-
