@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    background-image: url(/Doc/bg.jpg);
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/*Logo text*/
+.logo {
+    font-family: 'Courier New', monospace;
+    background-color: #111;
+    color: #00ff88;
+    font-weight: bold;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* border: 1.5px solid rgb(72, 206, 230); */
+}
+
+.logo .before {
+    color: #00ffff;
+}
+
+.link {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px 6px;
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 16px;
+    font-weight: bold;
+    /* background: rgb(36, 32, 30); */
+    border-radius: 5px;
+    margin: 3px;
+    /* border: 1.7px solid rgb(72, 206, 230); */
+}
+
+.navbar a:hover {
+    color: tomato;
+}
+
+.info {
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+.info h1 {
+    font-size: 65px;
+    color: rgb(66, 53, 46);
+    margin-bottom: -15px;
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: rgb(66,
+        53,
+        46);
+}
+
+.info span {
+    color: rgb(72, 206, 230);
+}
+
+.info a {
+    text-decoration: none;
+    color: #ffff;
+    background: rgb(36, 32, 30);
+    padding: 10px 18px;
+    border: 2px solid rgb(72, 206, 230);
+    border-radius: 9px;
+    display: inline-block;
+}
+
+.info a:hover {
+    background-color: rgb(72, 206, 230);
+    border: 1px dotted black;
+    color: black;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: left; */
+}
+
+@media screen  {
+    
+}
