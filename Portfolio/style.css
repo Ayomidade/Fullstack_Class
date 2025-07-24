@@ -105,12 +105,16 @@ body {
     top: 90px;
 }
 
-.image img {
+.image .profile {
     position: absolute;
     height: 90%;
     bottom: 0;
     border: 5px solid rgb(72, 206, 230);
     border-radius: 150px;
+}
+
+.img {
+    display: none;
 }
 
 /* .main {
@@ -159,7 +163,45 @@ body {
         margin: 50px 0px -20px;
     }
 
+
+
+    .img {
+        height: 60%;
+        display: inline;
+        /* position: relative;
+        left: 100px;
+        top: 0%;
+        border: 0px;
+        border-radius: 0px;
+        height: 50%; */
+    }
+
+    .image img {
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        /* right: 0px;
+    left: 0px; */
+        margin: 0px;
+
+    }
+
     img {
         display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+
+        /* align-items: center; */
+    }
+
+    .main .left {
+        margin-left: 20px;
+    }
+
+    .main .img {
+        margin-left: 20px;
     }
 }
