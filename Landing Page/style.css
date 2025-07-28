@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 .hero {
-  background: url(/Doc/image/group-diverse-cheerful-kids.jpg) no-repeat center/cover;
+  background: url(assets/group-diverse-cheerful-kids.jpg) no-repeat center/cover;
   /* background-repeat: no-repeat;
   object-fit: cover; */
   color: white;
@@ -379,7 +379,7 @@ button.contact:hover {
 }
 
 .conclusion {
-  background: url(/Doc/image/annie-spratt-QdK6aujOLYs-unsplash.jpg) no-repeat center/cover;
+  background: url(assets/annie-spratt-QdK6aujOLYs-unsplash.jpg) no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
