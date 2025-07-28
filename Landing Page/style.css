@@ -583,6 +583,9 @@ footer {
     top: 10px;
     right: 10px;
     background-color: crimson;
+    padding: 4px;
+    border-radius: 9px;
+    cursor: pointer;
   }
 
   .container {
@@ -590,15 +593,27 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #00796b;
     position: relative;
     height: 200px;
     width: 100%;
     z-index: 2;
-    box-shadow: -5px -5px 15px black; /* x, y, boldness, color */  
-    
+    box-shadow: -5px -5px 15px black;
+    /* x, y, boldness, color */
+
   }
 
+  .container a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  .container a:hover {
+    color: #c3c9c8;
+  }
 
   nav .main {
     margin-top: 10px;
