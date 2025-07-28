@@ -1,14 +1,13 @@
 var overlay = document.getElementById("overlay");
 
+var closeBtn = document.getElementById("close");
 var button = document.getElementById("btn");
 button.addEventListener("click", (e) => {
   e.preventDefault();
-  alert("hello world");
+  overlay.style.display = "flex";
 });
-function open() {
-  // overlay.style.display = "flex";
-  alert("hello world");
-}
-function close() {
+
+closeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   overlay.style.display = "none";
-}
+});
