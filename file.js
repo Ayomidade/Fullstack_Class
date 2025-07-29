@@ -15,5 +15,5 @@ var link = document.getElementById("links");
 var menu = document.getElementById("bar");
 
 menu.addEventListener("click", () => {
-  links.style.display = "flex";
+  link.style.display = "flex";
 });

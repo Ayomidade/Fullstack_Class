@@ -1,4 +1,4 @@
-// alert("Hello world");
+alert("Hello world");
 
 var userName = "Myk3l";
 console.log(userName);
