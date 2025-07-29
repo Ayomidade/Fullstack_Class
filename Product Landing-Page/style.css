@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* background-color: navy; */
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+  /* padding: 200px; */
+}
+
+.logo img {
+  height: 40px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero img {
+  height: 100px;
+}

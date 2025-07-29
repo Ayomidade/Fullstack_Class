@@ -11,9 +11,9 @@
 //   container.style.display = "none";
 // });
 
-var link = document.getElementById("links");
+var links = document.getElementById("links");
 var menu = document.getElementById("bar");
 
 menu.addEventListener("click", () => {
-  link.style.display = "flex";
+  links.style.display = "block";
 });

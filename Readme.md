@@ -40,3 +40,6 @@
 - What is repoitory and How to link to the remote repository
 
 ### JAVASCRIPT CLASS
+
+- Variables, Data types, and Data Value
+  -Node
