@@ -88,6 +88,7 @@ q {
 .image img {
     height: 500px;
     transition: 0.3s ease-in-out;
+    position: sticky;
 }
 
 .me:hover {
