@@ -1,7 +1,7 @@
 // alert("Hello world");
 
-// var userName = 20;
-// console.log(userAge);
+var userName = "Myk3l";
+console.log(userName);
 
 var userAge = 29;
 var HeIsActive = true;
