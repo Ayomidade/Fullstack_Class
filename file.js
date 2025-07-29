@@ -1,9 +1,10 @@
-var overlay = document.getElementById("container");
-var button = document.getElementById("open");
-var button1 = document.getElementById("close");
+// var overlay = document.getElementById("container");
+var add = document.getElementById("event");
+// var button1 = document.getElementById("close");
 
-button.addEventListener("click", () => {
-  container.style.display = "flex";
+add.addEventListener("click", () => {
+  events.style.display = "flex";
+  
 });
 
 button1.addEventListener("click", () => {
