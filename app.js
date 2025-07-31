@@ -1,4 +1,4 @@
-alert("Hello world");
+// alert("Hello world");
 
 var userName = "Myk3l";
 console.log(userName);
@@ -20,3 +20,29 @@ console.log(
   school.noOfStudent,
   school.yearsOfEstablishment
 );
+
+let gender = "female";
+if (gender == "male") {
+  console.log("Eligible for football");
+} else if (gender == "female") {
+  console.log("Eligible for volleyball");
+} else {
+  console.log("Not eligible for any sport");
+}
+
+console.log(false && false, false || false, !false);
+
+var user = "mike ayodele";
+console.log(user)
+
+var a = 6;
+var b = 8;
+var c = a + b;
+console.log(c);
+
+var a = 3;
+var b = 5;
+console.log(a === b);
+
+var a = 8;
+console.log(a += 2);
