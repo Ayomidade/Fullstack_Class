@@ -4,22 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    body {
-        padding: 10px;
-    }
-}
-
 header {
     width: 100%;
     display: flex;
@@ -45,6 +29,7 @@ header {
     color: darkslategray;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
+    animation: fadeindown 0.6s ease-out;
 }
 
 nav a:hover {
@@ -86,22 +71,97 @@ body {
 }
 
 .profile-image {
-    width: auto;
+    width: 150px;
     height: 180px;
     border-radius: 20%;
     object-fit: cover;
-    border: 5px solid #667eea;
+    border: 3px solid #667eea;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
 
+#image {
+    width: 150px;
+    height: 180px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 3px solid #667eea;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+#michael {
+    width: 150px;
+    height: 180px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 3px solid #667eea;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+#ilorin {
+    width: 150px;
+    height: 180px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 3px solid #667eea;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+#sister {
+    width: 150px;
+    height: 180px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 3px solid #667eea;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
 .profile-image:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
+    border: 5px solid darkslateblue;
+    border-radius: 15px;
+}
+
+#image:hover {
+    transform: scale(1.05);
+    border: 5px solid darkslateblue;
+    border-radius: 15px;
+}
+
+#sister:hover {
+    transform: scale(1.05);
+    border: 5px solid darkslateblue;
+    border-radius: 15px;
+}
+
+#michael:hover {
+    transform: scale(1.05);
+    border: 5px solid darkslateblue;
+    border-radius: 15px;
+}
+
+#ilorin:hover {
+    transform: scale(1.05);
+    border: 5px solid darkslateblue;
+    border-radius: 15px;
 }
 
 .summary {
     text-align: center;
     margin-bottom: 20px;
+    animation-name: slideinleft;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.6s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
 }
 
 .summary h1 {
@@ -125,28 +185,29 @@ body {
 .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    align-items: center;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
 .content-section h2 {
     color: #667eea;
     margin-bottom: 10px;
-    font-size: 23px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .content-section p {
     margin-bottom: 10px;
     color: #555;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 .skill-category {
-    background: #f8f9fa;
+    background: #f3f9ff;
     padding: 20px;
     border-radius: 15px;
     border-left: 4px solid #667eea;
+    margin-bottom: 10px;
 }
 
 .skill-category h3 {
@@ -160,40 +221,40 @@ body {
 .skill-list li {
     padding: 4px 0;
     color: #666;
-    position: relative;
     margin-left: 1%;
 }
 
 .stats-section {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 15px;
     margin-bottom: 20px;
+    animation-name: slideinright;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.6s;
+    animation-delay: 0ms;
+}
+
+.stats-section h2 {
+    text-align: center;
+    margin-bottom: 20px
 }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+
 }
 
-.stats-item h3 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+.stat-item h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
 }
 
-.stats-item p {
-    opacity: 0.9;
-}
-
-
-.timeline {
-    position: relative;
-    padding-left: 2rem;
-}
-
+/* 
 .timeline::before {
     content: '';
     position: absolute;
@@ -203,13 +264,20 @@ body {
     width: 2px;
     background: #667eea;
 }
-
+*/
 .timeline-item {
-    position: relative;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
+    margin-bottom: 10px;
+    background-color: #f3f9ff;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: slideinleft;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.6s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
 }
 
+/*
 .timeline-item::before {
     content: '';
     position: absolute;
@@ -219,36 +287,40 @@ body {
     height: 12px;
     background: #667eea;
     border-radius: 50%;
-}
+} */
 
 .timeline-item h4 {
     color: #888;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .timeline-item .date {
     color: #888;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    font-size: 14px;
+    margin-bottom: 7px;
 }
 
 .cta-section {
     text-align: center;
-    background: #f8f9fa;
-    padding: 2rem;
+    background: #f3f9ff;
+    padding: 25px;
     border-radius: 15px;
+    color: #444;
+}
+
+.cta-section h2 {
+    margin: 7px;
 }
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
-    padding: 1rem 2rem;
+    padding: 16px;
     text-decoration: none;
     border-radius: 25px;
-    font-weight: 500;
     transition: all 0.3s ease;
-    margin: 0.5rem;
+    margin: 9px;
 }
 
 .cta-button:hover {
@@ -256,21 +328,86 @@ body {
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
-@media(max-width:768) {
+.skills-grid {
+    animation-name: slideinleft;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.6s;
+    animation-delay: 0ms;
+}
+
+/* Mobile styles */
+@media (max-width: 650px) {
     .content-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 20px;
     }
 
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
+    body {
+        padding: 10px;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+        animation: fadeindown 0.3s ease-out;
+    }
+
+    li {
+        display: block;
+        list-style: none;
+        padding: 5px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: darkslategray;
+        font-weight: bold;
+    }
+
+    #menu {
+        display: block;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: transparent;
+        color: darkslategray;
+        animation: fadeindown 0.6s ease-in-out;
+    }
+
+    #close {
+        color: darkslategray;
+        font-size: 25px;
+        background-color: transparent;
+        border: none;
+        animation: fadeindown 0.3s ease-in-out;
+
+    }
+
+    #sister,
+    #image,
+    #ilorin,
+    #michael {
+        display: none;
     }
 }
 
-.navbar {
+nav {
     animation: fadeindown 0.6s ease-out;
 }
+
+.rotate {
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+/* ANIMATIONS */
 
 @keyframes fadeindown {
     from {
@@ -284,21 +421,36 @@ body {
     }
 }
 
-.logo-6 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #333;
-    position: relative;
-    font-family: 'Arial', sans-serif;
+@keyframes slideinleft {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.logo-6::after {
-    content: '';
-    position: absolute;
-    bottom: 4px;
-    left: -10%;
-    width: 60%;
-    height: 4px;
-    background: linear-gradient(90deg, #007bff, #28a745);
-    border-radius: 2px;
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes slideinright {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
