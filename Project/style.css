@@ -8,6 +8,10 @@ body {
     background-color: whitesmoke;
 }
 
+.info q {
+    font-style: italic;
+}
+
 .container {
     width: 96%;
     background-color: white;

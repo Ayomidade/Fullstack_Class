@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.svg-logo {
+  width: 80%;
+  max-width: 500px;
+  height: 100px;
+}
+
+.svg-text {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 48px;
+  fill: white;
+  text-shadow: 0 0 5px #00ffe1;
+  animation: glowPulse 2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.svg-logo:hover .svg-text {
+  fill: #00ffe1;
+  text-shadow:
+    0 0 10px #00ffe1,
+    0 0 20px #00ffe1,
+    0 0 40px #00ffe1,
+    0 0 60px #00ffe1;
+  transform: scale(1.1);
+}
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #ffffff,
+      0 0 10px #00ffe1,
+      0 0 20px #00ffe1;
+  }
+
+  50% {
+    text-shadow:
+      0 0 15px #00ffe1,
+      0 0 30px #00ffe1,
+      0 0 45px #00ffe1;
+  }
+}

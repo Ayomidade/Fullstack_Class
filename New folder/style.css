@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Logo Styles */
+.glow-logo {
+  font-size: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  animation: pulse-glow 2s infinite;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #00ffe1,
+    0 0 40px #00ffe1;
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #ffffff,
+      0 0 10px #ffffff,
+      0 0 20px #00ffe1,
+      0 0 40px #00ffe1;
+    transform: scale(1);
+  }
+
+  50% {
+    text-shadow:
+      0 0 10px #00ffe1,
+      0 0 20px #00ffe1,
+      0 0 40px #00ffe1,
+      0 0 60px #00ffe1;
+    transform: scale(1.05);
+  }
+}
